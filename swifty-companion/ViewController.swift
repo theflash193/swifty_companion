@@ -11,30 +11,54 @@ import Alamofire
 import OAuth2
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     var student: Student!
-    
-    @IBAction func testAction(sender: AnyObject) {
-        
-        let manager = APImanager(contextView: self)
-        
-        
-        manager.request(.GET, "https://api.intra.42.fr/v2/users/grass-kw") { response in
-            let data = JSON(data: response.data!)
-            self.student = Student(data: data)
-            print("email: \(self.student.email)")
-        }
-        
-    }
+
+    // MARK: properties
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+        searchButton.enabled = false
+        searchTextField.delegate = self
     }
     
+    // MARK: Action
     
-
-
+    @IBAction func SearchAction(sender: UIButton) {
+        let manager = APImanager(contextView: self)
+        let login = searchTextField.text!
+        print(login)
+        
+        manager.request(.GET, "https://api.intra.42.fr/v2/users/\(login)") { response in
+            let data = JSON(data: response.data!)
+            self.student = Student(data: data)
+            print("email: \(self.student.email)")
+        }
+    }
+    
+    // MARK: UITextFieldDelegate
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        searchButton.enabled = false
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        checkValidLogin()
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func checkValidLogin() {
+        // Disabled button search if text is invalid
+        let text = searchTextField.text ?? ""
+        searchButton.enabled = !text.isEmpty
+    }
+    
+    //
 }

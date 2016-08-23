@@ -20,15 +20,18 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krp-pm-cLJ">
                                 <rect key="frame" x="72" y="300" width="456" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Search Companion"/>
                                 <connections>
-                                    <action selector="testAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyr-Sf-EEt"/>
+                                    <action selector="SearchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Br-fL-Suo"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tc6-G0-nud">
                                 <rect key="frame" x="72" y="236" width="456" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SearchButton:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="g5W-as-heP"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -42,7 +45,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchButton" destination="krp-pm-cLJ" id="vkZ-cX-ls2"/>
                         <outlet property="searchDisplayController" destination="hQg-RX-BSj" id="bVA-Qd-HaF"/>
+                        <outlet property="searchTextField" destination="Tc6-G0-nud" id="B62-uq-Nlz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
