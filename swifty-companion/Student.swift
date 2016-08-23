@@ -7,22 +7,30 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class Student {
     
     // MARK: properties
     
     let login: String
+    let full_name: String
     let photo: UIImage?
     let email: String
     let mobile: String
-    let niveau: Float
+    let promotion: String
+    let niveau: String
     
-    init(login: String, photo: UIImage?, email: String, mobile: String, niveau: Float) {
-        self.login = login
-        self.photo = photo
-        self.email = email
-        self.mobile = mobile
-        self.niveau = niveau
+    init(data: JSON) {
+        let url = NSURL(string: data["image_url"].stringValue)
+        
+        self.photo = UIImage(data: NSData(contentsOfURL: url!)!)
+        self.login = data["login"].stringValue
+        self.full_name = data["displayname"].stringValue
+        self.email = data["email"].stringValue
+        self.mobile = data["phone"].stringValue
+        self.promotion = data["pool_year"].stringValue
+        self.niveau = data["cursus_users"][0]["level"].stringValue
     }
 }

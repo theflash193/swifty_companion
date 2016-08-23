@@ -1,0 +1,12 @@
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "SwiftyJSON"]
+	path = SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git
+[submodule "OAuth2"]
+	path = OAuth2
+	url = https://github.com/p2/OAuth2
+[submodule "SwiftKeychain"]
+	path = SwiftKeychain
+	url = https://github.com/yankodimitrov/SwiftKeychain
