@@ -7,8 +7,27 @@
 //
 
 import UIKit
-import Foundation
 
 class ProfileViewController: UIViewController {
-
+    
+    var student: Student!
+    
+    @IBOutlet weak var login: UILabel!
+//    @IBOutlet weak var level: UILabel!
+//    @IBOutlet weak var promotion: UILabel!
+//    @IBOutlet weak var email: UILabel!
+//    @IBOutlet weak var phone: UILabel!
+    
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.title = "Profile"
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        login.text = student!.login
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

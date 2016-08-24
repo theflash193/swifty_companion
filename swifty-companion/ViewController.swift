@@ -78,5 +78,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         searchButton.enabled = !text.isEmpty
     }
     
-    //
+    // MARK: navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (sender === searchButton) {
+            let ProfileVC = segue.destinationViewController as! ProfileViewController
+            ProfileVC.student = self.student
+        }
+    }
 }
