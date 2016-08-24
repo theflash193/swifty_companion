@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Rv-E1-bBs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -42,6 +42,7 @@
                             <constraint firstItem="Tc6-G0-nud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="aqf-o3-OHc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="afr-cN-3Cw"/>
                     <connections>
                         <outlet property="searchButton" destination="krp-pm-cLJ" id="vkZ-cX-ls2"/>
                         <outlet property="searchDisplayController" destination="hQg-RX-BSj" id="bVA-Qd-HaF"/>
@@ -58,7 +59,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="885" y="670"/>
+            <point key="canvasLocation" x="1697" y="670"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="F8q-FX-r3c">
@@ -75,12 +76,6 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mj1-Cn-klP">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rainbow flower" translatesAutoresizingMaskIntoConstraints="NO" id="Fi1-Ma-Anj">
-                                        <rect key="frame" x="8" y="38" width="240" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="7xc-1k-0UE"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-m1-3OH">
                                         <rect key="frame" x="271" y="38" width="131" height="21"/>
                                         <accessibility key="accessibilityConfiguration" identifier="loginText"/>
@@ -177,12 +172,12 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZM-tw-RYJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <items>
-                                            <navigationItem title="Profile" id="oTh-BV-dYC"/>
-                                        </items>
-                                    </navigationBar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rainbow flower" translatesAutoresizingMaskIntoConstraints="NO" id="Fi1-Ma-Anj">
+                                        <rect key="frame" x="8" y="43" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="7xc-1k-0UE"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Fi1-Ma-Anj" firstAttribute="top" secondItem="mj1-Cn-klP" secondAttribute="top" constant="45" id="3Pf-uZ-59b"/>
@@ -215,7 +210,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Os-c3-I00" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="670"/>
+            <point key="canvasLocation" x="2466" y="670"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ASQ-1z-wO5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Rv-E1-bBs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="96l-u5-1CL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PCa-Z8-Arn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRp-OU-IeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="670"/>
         </scene>
     </scenes>
     <resources>
