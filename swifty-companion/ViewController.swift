@@ -25,6 +25,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         searchTextField.delegate = self
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.navigationBarHidden = true
+        
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.navigationBarHidden = false
+    }
+    
     // MARK: Action
     
     @IBAction func SearchAction(sender: AnyObject) {
