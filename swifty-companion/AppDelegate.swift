@@ -44,9 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication,
                      openURL url: NSURL,
                              sourceApplication: String?,
-                             annotation: AnyObject) -> Bool {
-        print(url)
-        
+                             annotation: AnyObject) -> Bool {        
         APIRequester.sharedInstance.oauth2.handleRedirectURL(url)
         
         return true

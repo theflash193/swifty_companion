@@ -18,21 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krp-pm-cLJ">
-                                <rect key="frame" x="72" y="300" width="456" height="30"/>
-                                <state key="normal" title="Search Companion"/>
-                                <connections>
-                                    <action selector="SearchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Br-fL-Suo"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tc6-G0-nud">
                                 <rect key="frame" x="72" y="236" width="456" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="SearchButton:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="g5W-as-heP"/>
-                                </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krp-pm-cLJ">
+                                <rect key="frame" x="72" y="300" width="456" height="30"/>
+                                <state key="normal" title="Search Companion"/>
+                                <connections>
+                                    <action selector="SearchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VP-Fk-d0L"/>
+                                    <segue destination="kfu-8z-sZ3" kind="show" id="43O-Bm-wAH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -62,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="885" y="670"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="F8q-FX-r3c">
             <objects>
-                <viewController id="kfu-8z-sZ3" sceneMemberID="viewController">
+                <viewController id="kfu-8z-sZ3" customClass="ProfileViewController" customModule="swifty_companion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fal-By-iDe"/>
                         <viewControllerLayoutGuide type="bottom" id="mfT-X9-p6h"/>
@@ -179,6 +177,12 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZM-tw-RYJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <items>
+                                            <navigationItem title="Profile" id="oTh-BV-dYC"/>
+                                        </items>
+                                    </navigationBar>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Fi1-Ma-Anj" firstAttribute="top" secondItem="mj1-Cn-klP" secondAttribute="top" constant="45" id="3Pf-uZ-59b"/>

@@ -15,6 +15,7 @@
 		000D75F01D6C79CE00E21943 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 009B97A71D66119A00D932EA /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		000D75F31D6C79CE00E21943 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 009B978A1D660EC600D932EA /* Alamofire.framework */; };
 		000D75F41D6C79CE00E21943 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 009B978A1D660EC600D932EA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		001FA2021D6DB94B00A47AFB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FA2011D6DB94B00A47AFB /* ProfileViewController.swift */; };
 		006E60D71D4A575700F72CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60D61D4A575700F72CDB /* AppDelegate.swift */; };
 		006E60D91D4A575700F72CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60D81D4A575700F72CDB /* ViewController.swift */; };
 		006E60DC1D4A575700F72CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006E60DA1D4A575700F72CDB /* Main.storyboard */; };
@@ -222,6 +223,7 @@
 /* Begin PBXFileReference section */
 		000757971D6B1CE1006DB6E0 /* APImanager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APImanager.swift; sourceTree = "<group>"; };
 		000757991D6B220E006DB6E0 /* APIRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequester.swift; sourceTree = "<group>"; };
+		001FA2011D6DB94B00A47AFB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		003E7EC51D6AFEC50033D22D /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = OAuth2/OAuth2.xcodeproj; sourceTree = "<group>"; };
 		006E60D31D4A575700F72CDB /* swifty-companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swifty-companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		006E60D61D4A575700F72CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 			children = (
 				006E60D61D4A575700F72CDB /* AppDelegate.swift */,
 				006E60D81D4A575700F72CDB /* ViewController.swift */,
+				001FA2011D6DB94B00A47AFB /* ProfileViewController.swift */,
 				006E60DA1D4A575700F72CDB /* Main.storyboard */,
 				006E60DD1D4A575700F72CDB /* Assets.xcassets */,
 				006E60DF1D4A575700F72CDB /* LaunchScreen.storyboard */,
@@ -595,6 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001FA2021D6DB94B00A47AFB /* ProfileViewController.swift in Sources */,
 				006E60D91D4A575700F72CDB /* ViewController.swift in Sources */,
 				0007579A1D6B220E006DB6E0 /* APIRequester.swift in Sources */,
 				000757981D6B1CE1006DB6E0 /* APImanager.swift in Sources */,

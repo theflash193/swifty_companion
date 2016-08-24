@@ -27,16 +27,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Action
     
-    @IBAction func SearchAction(sender: UIButton) {
+    @IBAction func SearchAction(sender: AnyObject) {
         let manager = APImanager(contextView: self)
         let login = searchTextField.text!
-        print(login)
         
         manager.request(.GET, "https://api.intra.42.fr/v2/users/\(login)") { response in
             let data = JSON(data: response.data!)
             self.student = Student(data: data)
             print("email: \(self.student.email)")
         }
+    }
+    
+    
+    @IBAction func backToSearchUnwindAction(unwindSegue: UIStoryboardSegue) {
+        
     }
     
     // MARK: UITextFieldDelegate
@@ -51,6 +55,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        SearchAction(self)
         return true
     }
     
