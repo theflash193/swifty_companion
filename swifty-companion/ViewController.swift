@@ -32,6 +32,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    
+    
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
@@ -46,10 +48,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         manager.request(.GET, "https://api.intra.42.fr/v2/users/\(login)") { response in
             let data = JSON(data: response.data!)
-            print(data)
             self.student = Student(data: data)
-//            print("email: \(self.student.email)")
         }
+        
     }
     
     
