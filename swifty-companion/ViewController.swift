@@ -53,11 +53,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    
-    @IBAction func backToSearchUnwindAction(unwindSegue: UIStoryboardSegue) {
-        
-    }
-    
     // MARK: UITextFieldDelegate
     
     func textFieldDidBeginEditing(textField: UITextField) {
