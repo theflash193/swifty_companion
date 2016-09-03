@@ -12,7 +12,7 @@ import OAuth2
 import SwiftyJSON
 
 class ViewController: UIViewController, UITextFieldDelegate {
-    var student: Student!
+    var student: Student? = nil
 
     // MARK: properties
     @IBOutlet weak var searchTextField: UITextField!
@@ -45,12 +45,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func SearchAction(sender: AnyObject) {
         let manager = APImanager(contextView: self)
         let login = searchTextField.text!
+        let try_url: NSURL? = NSURL(string: "https://api.intra.42.fr/v2/users/\(login)")
         
-        manager.request(.GET, "https://api.intra.42.fr/v2/users/\(login)") { response in
-            let data = JSON(data: response.data!)
-            self.student = Student(data: data)
+        if let url = try_url {
+            manager.request(.GET, url) { response in
+                switch response.result {
+                case .Success:
+                    let data = JSON(data: response.data!)
+                    self.student = Student(data: data)
+                    fallthrough
+                case .Failure: break
+                }
+            }
         }
-        
     }
     
     // MARK: UITextFieldDelegate
@@ -73,6 +80,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Disabled button search if text is invalid
         let text = searchTextField.text ?? ""
         searchButton.enabled = !text.isEmpty
+        if var valid = student {
+            
+        } else {
+            searchButton.enabled = false
+        }
+        
     }
     
     // MARK: navigation

@@ -14,17 +14,18 @@ class Student {
     
     // MARK: properties
     
-    let login: String
-    let full_name: String
+    let login: String?
+    let full_name: String?
     let photo: UIImage?
-    let email: String
-    let mobile: String
-    let promotion: String
-    let niveau: String
-    let competence: JSON
-    let projets: JSON
+    let email: String?
+    let mobile: String?
+    let promotion: String?
+    let niveau: String?
+    let competence: JSON?
+    let projets: JSON?
     
-    init(data: JSON) {
+    init?(data: JSON) {
+        
         let url = NSURL(string: data["image_url"].stringValue)
 //        let skills: JSON = data["cursus_users"][0]["skill"]
 //        print(skills)
