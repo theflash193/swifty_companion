@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         SearchAction(self)
         return true
     }
-    
+
     func checkValidLogin() {
         // Disabled button search if text is invalid
         let text = searchTextField.text ?? ""
@@ -90,9 +90,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (sender === searchButton) {
-            let ProfileVC = segue.destinationViewController as! ProfileViewController
-            ProfileVC.student = self.student
+        if segue.identifier == "showProfile" {
+            if let tbc = segue.destinationViewController as? UITabBarController {
+                if let dvc = tbc.viewControllers![0] as? ProfileViewController {
+                    dvc.student = self.student
+                }
+            }
         }
     }
 }

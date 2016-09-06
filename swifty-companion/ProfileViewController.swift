@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    var student: Student!
+    var student: Student?
     
     @IBOutlet weak var photoProfile: UIImageView!
     @IBOutlet weak var login: UILabel!
@@ -25,12 +25,38 @@ class ProfileViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoProfile.image = student.photo
-        login.text = student!.login
-        level.text = student!.niveau
-        promotion.text = student!.promotion
-        email.text = student!.email
-        phone.text = student!.mobile
+        if let Stu = student {
+            if let Test_photo = Stu.photo {
+                photoProfile.image = Test_photo
+            }
+        
+            if let Test_login = Stu.login {
+                login.text = Test_login
+            } else {
+                login.text = "Not found"
+            }
+        
+            if let Test_level = Stu.niveau {
+                level.text = Test_level
+            } else {
+                level.text = "Not found"
+            }
+            if let Test_promotion = Stu.promotion {
+                promotion.text = Test_promotion
+            } else {
+                promotion.text = "Not found"
+            }
+            if let Test_email = Stu.email {
+                email.text = Test_email
+            } else {
+                email.text = "Not found"
+            }
+            if let T_phone = Stu.mobile {
+                phone.text = T_phone
+            } else {
+                phone.text = "Not found"
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
