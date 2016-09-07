@@ -29,7 +29,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBarHidden = true
-        
     }
     
     
@@ -92,8 +91,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showProfile" {
             if let tbc = segue.destinationViewController as? UITabBarController {
-                if let dvc = tbc.viewControllers![0] as? ProfileViewController {
-                    dvc.student = self.student
+                if let ProfileVC = tbc.viewControllers![0] as? ProfileViewController {
+                    ProfileVC.student = self.student
+                }
+                if let SkillsVC = tbc.viewControllers![1] as? SkillsViewController {
+                    
+                }
+                if let ProjectsVC = tbc.viewControllers![2] as? ProjectsViewController {
+                    
                 }
             }
         }

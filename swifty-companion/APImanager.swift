@@ -28,7 +28,10 @@ public class APImanager {
                     vc.dismissViewControllerAnimated(true, completion: nil)
                 }
             } catch {
-                print(error)
+            
+            
+            
+            
             }
         } else {
             requester.oauth2.authorize()
