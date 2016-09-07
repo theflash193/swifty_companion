@@ -8,12 +8,17 @@
 
 import UIKit
 
-class SkillsViewController: UIViewController {
+class SkillsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var student: Student?
+    @IBOutlet weak var SkillTableView: UITableView!
+    let jojo = ["Jonatan", "Joseph", "Jotaro", "Josuke"]
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        SkillTableView.delegate = self
+        SkillTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -23,6 +28,19 @@ class SkillsViewController: UIViewController {
     }
     
 
+    // MARK: - DataSource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return jojo.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let myCell: UITableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath)
+        
+        
+        myCell.textLabel?.text = jojo[indexPath.row]
+        return myCell
+    }
+    
     /*
     // MARK: - Navigation
 
