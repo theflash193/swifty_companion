@@ -52,8 +52,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 case .Success:
                     let data = JSON(data: response.data!)
                     self.student = Student(data: data)
-                    fallthrough
-                case .Failure: break
+                case .Failure:
+                    print("error")
                 }
             }
         }
@@ -79,8 +79,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Disabled button search if text is invalid
         let text = searchTextField.text ?? ""
         searchButton.enabled = !text.isEmpty
-        if var valid = student {
-            
+        if student != nil {
+            searchButton.enabled = true
         } else {
             searchButton.enabled = false
         }
