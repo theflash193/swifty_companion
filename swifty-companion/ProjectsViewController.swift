@@ -8,14 +8,18 @@
 
 import UIKit
 
-class ProjectsViewController: UIViewController {
+class ProjectsViewController: UIViewController, UITableViewDataSource {
     var student: Student?
+    
+    @IBOutlet weak var ProjectTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("hello world")
-        print(student)
+        ProjectTableView.dataSource = self
+//        
+//        print(student?.projets)
+//        print("project name : \(student?.projets?[0]["project"]["name"].stringValue)")
         // Do any additional setup after loading the view.
     }
 
@@ -25,6 +29,18 @@ class ProjectsViewController: UIViewController {
     }
     
 
+    // MARK: - DataSource
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (student?.projets?.count)!
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let myCell: UITableViewCell = ProjectTableView.dequeueReusableCellWithIdentifier("Project", forIndexPath: indexPath)
+        let name: String? = student?.projets?[indexPath.row]["project"]["name"].stringValue
+        myCell.textLabel?.text = name
+        return myCell
+    }
     /*
     // MARK: - Navigation
 
