@@ -28,13 +28,14 @@ class SkillsViewController: UIViewController, UITableViewDataSource, UITableView
     
     // MARK: - DataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return jojo.count
+        return student!.competence!.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let myCell: SkillsTableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath) as! SkillsTableViewCell
         
-        myCell.SkillTableView.text = jojo[indexPath.row]
+        let StatSkill: String = student!.competence![indexPath.row]["name"].stringValue + " " + student!.competence![indexPath.row]["level"].stringValue
+        myCell.SkillTableView.text = StatSkill
         return myCell
     }
     

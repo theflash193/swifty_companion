@@ -42,6 +42,5 @@ class Student {
         self.niveau = data["cursus_users"][0]["level"].stringValue
         self.competence = data["cursus_users"][0]["skills"]
         self.projets = data["projects_users"]
-        
     }
 }
