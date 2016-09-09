@@ -13,7 +13,9 @@ class ProjectsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        print("hello world")
+        print(student)
         // Do any additional setup after loading the view.
     }
 

@@ -26,6 +26,7 @@
 		006E60EC1D4A575700F72CDB /* swifty_companionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60EB1D4A575700F72CDB /* swifty_companionTests.swift */; };
 		006E60F71D4A5E7900F72CDB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60F61D4A5E7900F72CDB /* Student.swift */; };
 		006E60F81D4A5E7900F72CDB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60F61D4A5E7900F72CDB /* Student.swift */; };
+		008AF7501D82C15900F5DB8A /* SkillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008AF74F1D82C15900F5DB8A /* SkillsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +241,7 @@
 		006E60EB1D4A575700F72CDB /* swifty_companionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifty_companionTests.swift; sourceTree = "<group>"; };
 		006E60ED1D4A575700F72CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006E60F61D4A5E7900F72CDB /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		008AF74F1D82C15900F5DB8A /* SkillsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsTableViewCell.swift; sourceTree = "<group>"; };
 		009B977E1D660EC600D932EA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		009B979C1D66119A00D932EA /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -279,6 +281,7 @@
 		006E60CA1D4A575700F72CDB = {
 			isa = PBXGroup;
 			children = (
+				008AF74F1D82C15900F5DB8A /* SkillsTableViewCell.swift */,
 				003E7EC51D6AFEC50033D22D /* OAuth2.xcodeproj */,
 				009B979C1D66119A00D932EA /* SwiftyJSON.xcodeproj */,
 				009B977E1D660EC600D932EA /* Alamofire.xcodeproj */,
@@ -612,6 +615,7 @@
 				0029EEB11D8046CE00BE283C /* SkillsViewController.swift in Sources */,
 				006E60F71D4A5E7900F72CDB /* Student.swift in Sources */,
 				006E60D71D4A575700F72CDB /* AppDelegate.swift in Sources */,
+				008AF7501D82C15900F5DB8A /* SkillsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

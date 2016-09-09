@@ -13,7 +13,6 @@ class SkillsViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var SkillTableView: UITableView!
     let jojo = ["Jonatan", "Joseph", "Jotaro", "Josuke"]
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,17 +26,15 @@ class SkillsViewController: UIViewController, UITableViewDataSource, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-
     // MARK: - DataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return jojo.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell: UITableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath)
+        let myCell: SkillsTableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath) as! SkillsTableViewCell
         
-        
-        myCell.textLabel?.text = jojo[indexPath.row]
+        myCell.SkillTableView.text = jojo[indexPath.row]
         return myCell
     }
     

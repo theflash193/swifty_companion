@@ -91,13 +91,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showProfile" {
             if let tbc = segue.destinationViewController as? UITabBarController {
+                print(tbc.viewControllers)
                 if let ProfileVC = tbc.viewControllers![0] as? ProfileViewController {
                     ProfileVC.student = self.student
                 }
-                if let SkillsVC = tbc.viewControllers![1] as? SkillsViewController {
-                    
+                if let ProjectsVC = tbc.viewControllers![1] as? ProjectsViewController {
+                    ProjectsVC.student = self.student
                 }
-                if let ProjectsVC = tbc.viewControllers![2] as? ProjectsViewController {
+                if let SkillsVC = tbc.viewControllers![2] as? SkillsViewController {
                     
                 }
             }
