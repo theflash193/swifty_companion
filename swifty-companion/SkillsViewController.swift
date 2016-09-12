@@ -11,7 +11,6 @@ import UIKit
 class SkillsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     var student: Student?
     @IBOutlet weak var SkillTableView: UITableView!
-    let jojo = ["Jonatan", "Joseph", "Jotaro", "Josuke"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +31,10 @@ class SkillsViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell: SkillsTableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath) as! SkillsTableViewCell
+        let myCell: UITableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath)
         
         let StatSkill: String = student!.competence![indexPath.row]["name"].stringValue + " " + student!.competence![indexPath.row]["level"].stringValue
-        myCell.SkillTableView.text = StatSkill
+        myCell.textLabel?.text = StatSkill
         return myCell
     }
     
