@@ -18,6 +18,7 @@
 		001FA2021D6DB94B00A47AFB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FA2011D6DB94B00A47AFB /* ProfileViewController.swift */; };
 		0029EEB11D8046CE00BE283C /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029EEB01D8046CE00BE283C /* SkillsViewController.swift */; };
 		0029EEC31D8046E400BE283C /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029EEC21D8046E400BE283C /* ProjectsViewController.swift */; };
+		00642F571D871B2200C6927E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00642F561D871B2200C6927E /* Images.xcassets */; };
 		006E60D71D4A575700F72CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60D61D4A575700F72CDB /* AppDelegate.swift */; };
 		006E60D91D4A575700F72CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60D81D4A575700F72CDB /* ViewController.swift */; };
 		006E60DC1D4A575700F72CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006E60DA1D4A575700F72CDB /* Main.storyboard */; };
@@ -230,6 +231,7 @@
 		0029EEB01D8046CE00BE283C /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		0029EEC21D8046E400BE283C /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		003E7EC51D6AFEC50033D22D /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = OAuth2/OAuth2.xcodeproj; sourceTree = "<group>"; };
+		00642F561D871B2200C6927E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		006E60D31D4A575700F72CDB /* swifty-companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swifty-companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		006E60D61D4A575700F72CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		006E60D81D4A575700F72CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -315,6 +317,7 @@
 				0029EEB01D8046CE00BE283C /* SkillsViewController.swift */,
 				0029EEC21D8046E400BE283C /* ProjectsViewController.swift */,
 				008AF7511D82E89900F5DB8A /* ProjectsTableViewCell.swift */,
+				00642F561D871B2200C6927E /* Images.xcassets */,
 			);
 			path = "swifty-companion";
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006E60E11D4A575700F72CDB /* LaunchScreen.storyboard in Resources */,
+				00642F571D871B2200C6927E /* Images.xcassets in Resources */,
 				006E60DE1D4A575700F72CDB /* Assets.xcassets in Resources */,
 				006E60DC1D4A575700F72CDB /* Main.storyboard in Resources */,
 			);
@@ -777,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "swifty-companion/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -789,6 +794,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "swifty-companion/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
