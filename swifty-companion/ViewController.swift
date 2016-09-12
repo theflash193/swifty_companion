@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+        student = nil
         navigationController?.navigationBarHidden = true
     }
     
