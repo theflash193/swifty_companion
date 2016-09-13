@@ -138,7 +138,7 @@
                             <constraint firstItem="vCB-QR-RvO" firstAttribute="centerX" secondItem="7OM-mP-uGk" secondAttribute="centerX" id="tTC-Ct-yWC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="w84-ib-Dy7"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile filled" id="w84-ib-Dy7"/>
                     <connections>
                         <outlet property="email" destination="vCB-QR-RvO" id="agi-Yb-3e6"/>
                         <outlet property="level" destination="T8m-Lj-9ku" id="Rvw-yM-XDj"/>
@@ -181,7 +181,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Project" id="HaK-8s-bj9"/>
+                    <tabBarItem key="tabBarItem" title="Project" image="projet" selectedImage="projet filled" id="HaK-8s-bj9"/>
                     <connections>
                         <outlet property="ProjectTableView" destination="w6f-ir-lXk" id="8Bv-yI-akT"/>
                     </connections>
@@ -226,7 +226,7 @@
                             <constraint firstItem="0Mb-oT-qEU" firstAttribute="leading" secondItem="Sgn-jg-Beq" secondAttribute="leading" id="m1D-Sd-L7d"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Skills" id="gu5-9m-Hwo"/>
+                    <tabBarItem key="tabBarItem" title="Skills" image="skill" selectedImage="skill filled" id="gu5-9m-Hwo"/>
                     <connections>
                         <outlet property="SkillTableView" destination="0Mb-oT-qEU" id="5GW-v5-mPZ"/>
                     </connections>
@@ -276,5 +276,11 @@
     <resources>
         <image name="Background" width="2000" height="1300"/>
         <image name="Inconnue" width="200" height="200"/>
+        <image name="profile" width="50" height="50"/>
+        <image name="profile filled" width="50" height="50"/>
+        <image name="projet" width="50" height="50"/>
+        <image name="projet filled" width="50" height="50"/>
+        <image name="skill" width="50" height="50"/>
+        <image name="skill filled" width="50" height="50"/>
     </resources>
 </document>
