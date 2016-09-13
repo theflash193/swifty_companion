@@ -27,7 +27,12 @@ class Student {
     init?(data: JSON) {
         
         let url = NSURL(string: data["image_url"].stringValue)
-        self.photo = UIImage(data: NSData(contentsOfURL: url!)!)
+//        self.photo = UIImage(data: NSData(contentsOfURL: url!)!)
+        if let nsdata = NSData(contentsOfURL: url!) {
+            self.photo = UIImage(data: nsdata)
+        } else {
+            self.photo = nil
+        }
         self.login = data["login"].stringValue
         self.full_name = data["displayname"].stringValue
         self.email = data["email"].stringValue
