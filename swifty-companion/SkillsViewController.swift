@@ -33,7 +33,8 @@ class SkillsViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let myCell: UITableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath)
         
-        let StatSkill: String = student!.competence![indexPath.row]["name"].stringValue + " " + student!.competence![indexPath.row]["level"].stringValue
+        let level_value: Float = student!.competence![indexPath.row]["level"].floatValue
+        let StatSkill: String = student!.competence![indexPath.row]["name"].stringValue + " " + String(format: "%.2f", level_value)
         myCell.textLabel?.text = StatSkill
         return myCell
     }
