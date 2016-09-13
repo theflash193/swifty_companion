@@ -33,7 +33,7 @@ class Student {
         self.email = data["email"].stringValue
         self.mobile = data["phone"].stringValue
         self.promotion = data["pool_year"].stringValue
-        
+        print(data)
         // Get Student level and skills
         var student_level: Float = 0.0
         var student_skill: JSON? = nil
