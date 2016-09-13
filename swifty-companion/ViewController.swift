@@ -29,6 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewWillAppear(animated)
         student = nil
         navigationController?.navigationBarHidden = true
+        searchButton.enabled = false
     }
     
     
@@ -99,6 +100,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
                 if let SkillsVC = tbc.viewControllers![2] as? SkillsViewController {
                     SkillsVC.student = self.student
+                }
+                if let AchivementVC = tbc.viewControllers![3] as? AchivementViewController {
+                    AchivementVC.student = self.student
                 }
             }
         }

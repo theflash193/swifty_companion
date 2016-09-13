@@ -23,11 +23,11 @@ class Student {
     let niveau: String?
     let competence: JSON?
     let projets: JSON?
+    let achievements: JSON?
     
     init?(data: JSON) {
         
         let url = NSURL(string: data["image_url"].stringValue)
-//        self.photo = UIImage(data: NSData(contentsOfURL: url!)!)
         if let nsdata = NSData(contentsOfURL: url!) {
             self.photo = UIImage(data: nsdata)
         } else {
@@ -38,7 +38,6 @@ class Student {
         self.email = data["email"].stringValue
         self.mobile = data["phone"].stringValue
         self.promotion = data["pool_year"].stringValue
-        print(data)
         // Get Student level and skills
         var student_level: Float = 0.0
         var student_skill: JSON? = nil
@@ -52,5 +51,6 @@ class Student {
         self.niveau = String(format: "%.2f", student_level)
         self.competence = student_skill
         self.projets = data["projects_users"]
+        self.achievements = data["achievements"]
     }
 }

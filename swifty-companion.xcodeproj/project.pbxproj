@@ -28,6 +28,7 @@
 		006E60F71D4A5E7900F72CDB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60F61D4A5E7900F72CDB /* Student.swift */; };
 		006E60F81D4A5E7900F72CDB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60F61D4A5E7900F72CDB /* Student.swift */; };
 		008AF7521D82E89900F5DB8A /* ProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008AF7511D82E89900F5DB8A /* ProjectsTableViewCell.swift */; };
+		00F362261D8831680060E999 /* AchivementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F362251D8831680060E999 /* AchivementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +247,7 @@
 		008AF7511D82E89900F5DB8A /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewCell.swift; sourceTree = "<group>"; };
 		009B977E1D660EC600D932EA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		009B979C1D66119A00D932EA /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		00F362251D8831680060E999 /* AchivementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchivementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +320,7 @@
 				0029EEC21D8046E400BE283C /* ProjectsViewController.swift */,
 				008AF7511D82E89900F5DB8A /* ProjectsTableViewCell.swift */,
 				00642F561D871B2200C6927E /* Images.xcassets */,
+				00F362251D8831680060E999 /* AchivementViewController.swift */,
 			);
 			path = "swifty-companion";
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 			files = (
 				0029EEC31D8046E400BE283C /* ProjectsViewController.swift in Sources */,
 				001FA2021D6DB94B00A47AFB /* ProfileViewController.swift in Sources */,
+				00F362261D8831680060E999 /* AchivementViewController.swift in Sources */,
 				006E60D91D4A575700F72CDB /* ViewController.swift in Sources */,
 				0007579A1D6B220E006DB6E0 /* APIRequester.swift in Sources */,
 				000757981D6B1CE1006DB6E0 /* APImanager.swift in Sources */,
