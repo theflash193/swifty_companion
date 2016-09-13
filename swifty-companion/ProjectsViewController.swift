@@ -32,13 +32,20 @@ class ProjectsViewController: UIViewController, UITableViewDataSource {
     // MARK: - DataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (student?.projets?.count)!
+        if student!.projets != nil {
+            return (student?.projets?.count)!
+        } else {
+            return 0
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let myCell: UITableViewCell = ProjectTableView.dequeueReusableCellWithIdentifier("Project", forIndexPath: indexPath)
-        let name: String? = student?.projets?[indexPath.row]["project"]["name"].stringValue
-        myCell.textLabel?.text = name
+        
+        if student!.projets != nil {
+            let name: String? = student?.projets?[indexPath.row]["project"]["name"].stringValue
+            myCell.textLabel?.text = name
+        }
         return myCell
     }
     /*

@@ -27,15 +27,21 @@ class SkillsViewController: UIViewController, UITableViewDataSource, UITableView
     
     // MARK: - DataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return student!.competence!.count
+        if student!.competence != nil {
+            return student!.competence!.count
+        } else {
+            return 0
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let myCell: UITableViewCell = SkillTableView.dequeueReusableCellWithIdentifier("Prototype1", forIndexPath: indexPath)
         
-        let level_value: Float = student!.competence![indexPath.row]["level"].floatValue
-        let StatSkill: String = student!.competence![indexPath.row]["name"].stringValue + " " + String(format: "%.2f", level_value)
-        myCell.textLabel?.text = StatSkill
+        if student!.competence != nil {
+            let level_value: Float = student!.competence![indexPath.row]["level"].floatValue
+            let StatSkill: String = student!.competence![indexPath.row]["name"].stringValue + " " + String(format: "%.2f", level_value)
+            myCell.textLabel?.text = StatSkill
+        }
         return myCell
     }
     
