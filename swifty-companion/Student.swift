@@ -34,14 +34,18 @@ class Student {
         self.mobile = data["phone"].stringValue
         self.promotion = data["pool_year"].stringValue
         
+        // Get Student level and skills
         var student_level: Float = 0.0
+        var student_skill: JSON? = nil
         for (_, cursus) in data["cursus_users"] {
             if cursus["cursus"]["name"].stringValue == "42" {
                 student_level = cursus["level"].floatValue
+                student_skill = cursus["skills"]
             }
         }
+        
         self.niveau = String(format: "%.2f", student_level)
-        self.competence = data["cursus_users"][0]["skills"]
+        self.competence = student_skill
         self.projets = data["projects_users"]
     }
 }
