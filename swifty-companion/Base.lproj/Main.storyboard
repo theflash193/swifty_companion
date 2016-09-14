@@ -198,7 +198,7 @@
             </objects>
             <point key="canvasLocation" x="3137" y="1603"/>
         </scene>
-        <!--Item-->
+        <!--Achivement-->
         <scene sceneID="5UJ-yN-7lZ">
             <objects>
                 <viewController id="Jyq-BW-g8f" customClass="AchivementViewController" customModule="swifty_companion" customModuleProvider="target" sceneMemberID="viewController">
@@ -240,7 +240,7 @@
                             <constraint firstAttribute="bottom" secondItem="SZL-hp-Do8" secondAttribute="bottom" id="i7q-ic-XJx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="achivement" selectedImage="achivement filled" id="yBa-yH-k2u"/>
+                    <tabBarItem key="tabBarItem" title="Achivement" image="achivement" selectedImage="achivement filled" id="yBa-yH-k2u"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flg-bt-eC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
