@@ -2,14 +2,15 @@
 //  AchivementViewController.swift
 //  swifty-companion
 //
-//  Created by Gordon RASS-KWASI on 9/13/16.
+//  Created by Gordon RASS-KWASI on 9/15/16.
 //  Copyright © 2016 Gordon RASS-KWASI. All rights reserved.
 //
 
 import UIKit
 
 class AchivementViewController: UIViewController {
-    // MARK: - Attribute
+    
+     // MARK: - Attributs
     var student: Student?
     
     override func viewDidLoad() {

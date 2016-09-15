@@ -18,6 +18,7 @@
 		001FA2021D6DB94B00A47AFB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001FA2011D6DB94B00A47AFB /* ProfileViewController.swift */; };
 		0029EEB11D8046CE00BE283C /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029EEB01D8046CE00BE283C /* SkillsViewController.swift */; };
 		0029EEC31D8046E400BE283C /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029EEC21D8046E400BE283C /* ProjectsViewController.swift */; };
+		005394A01D8AB64B00D468E3 /* AchivementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0053949F1D8AB64B00D468E3 /* AchivementViewController.swift */; };
 		00642F571D871B2200C6927E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00642F561D871B2200C6927E /* Images.xcassets */; };
 		006E60D71D4A575700F72CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60D61D4A575700F72CDB /* AppDelegate.swift */; };
 		006E60D91D4A575700F72CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60D81D4A575700F72CDB /* ViewController.swift */; };
@@ -28,7 +29,6 @@
 		006E60F71D4A5E7900F72CDB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60F61D4A5E7900F72CDB /* Student.swift */; };
 		006E60F81D4A5E7900F72CDB /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E60F61D4A5E7900F72CDB /* Student.swift */; };
 		008AF7521D82E89900F5DB8A /* ProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008AF7511D82E89900F5DB8A /* ProjectsTableViewCell.swift */; };
-		00F362261D8831680060E999 /* AchivementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F362251D8831680060E999 /* AchivementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +232,7 @@
 		0029EEB01D8046CE00BE283C /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		0029EEC21D8046E400BE283C /* ProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
 		003E7EC51D6AFEC50033D22D /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = OAuth2/OAuth2.xcodeproj; sourceTree = "<group>"; };
+		0053949F1D8AB64B00D468E3 /* AchivementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchivementViewController.swift; sourceTree = "<group>"; };
 		00642F561D871B2200C6927E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		006E60D31D4A575700F72CDB /* swifty-companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swifty-companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		006E60D61D4A575700F72CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -247,7 +248,6 @@
 		008AF7511D82E89900F5DB8A /* ProjectsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTableViewCell.swift; sourceTree = "<group>"; };
 		009B977E1D660EC600D932EA /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		009B979C1D66119A00D932EA /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
-		00F362251D8831680060E999 /* AchivementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchivementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,7 +320,7 @@
 				0029EEC21D8046E400BE283C /* ProjectsViewController.swift */,
 				008AF7511D82E89900F5DB8A /* ProjectsTableViewCell.swift */,
 				00642F561D871B2200C6927E /* Images.xcassets */,
-				00F362251D8831680060E999 /* AchivementViewController.swift */,
+				0053949F1D8AB64B00D468E3 /* AchivementViewController.swift */,
 			);
 			path = "swifty-companion";
 			sourceTree = "<group>";
@@ -616,7 +616,7 @@
 			files = (
 				0029EEC31D8046E400BE283C /* ProjectsViewController.swift in Sources */,
 				001FA2021D6DB94B00A47AFB /* ProfileViewController.swift in Sources */,
-				00F362261D8831680060E999 /* AchivementViewController.swift in Sources */,
+				005394A01D8AB64B00D468E3 /* AchivementViewController.swift in Sources */,
 				006E60D91D4A575700F72CDB /* ViewController.swift in Sources */,
 				0007579A1D6B220E006DB6E0 /* APIRequester.swift in Sources */,
 				000757981D6B1CE1006DB6E0 /* APImanager.swift in Sources */,
