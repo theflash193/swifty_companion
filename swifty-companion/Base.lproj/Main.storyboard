@@ -18,35 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-sy-Yxf">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-sy-Yxf">
+                                <rect key="frame" x="0.0" y="64" width="2000" height="536"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tc6-G0-nud">
+                                <rect key="frame" x="40" y="245" width="520" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krp-pm-cLJ">
-                                <rect key="frame" x="235" y="300" width="130" height="30"/>
+                                <rect key="frame" x="235" y="310" width="130" height="30"/>
                                 <state key="normal" title="Search Companion"/>
                                 <connections>
                                     <action selector="SearchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5VP-Fk-d0L"/>
                                     <segue destination="Jf0-oH-QzC" kind="show" identifier="showProfile" id="43O-Bm-wAH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tc6-G0-nud">
-                                <rect key="frame" x="62" y="235" width="476" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tc6-G0-nud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="0RB-vl-Hoc"/>
+                            <constraint firstItem="krp-pm-cLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rd-y1-bWb"/>
+                            <constraint firstItem="Tc6-G0-nud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="FUf-kg-pip"/>
                             <constraint firstItem="jcl-sy-Yxf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TpD-PF-KK2"/>
+                            <constraint firstItem="Tc6-G0-nud" firstAttribute="centerX" secondItem="krp-pm-cLJ" secondAttribute="centerX" id="UxR-yK-gYO"/>
                             <constraint firstItem="jcl-sy-Yxf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y7l-wF-ZR6"/>
-                            <constraint firstItem="Tc6-G0-nud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ypu-hj-Mwr"/>
-                            <constraint firstItem="Tc6-G0-nud" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="171" id="YzM-9Q-6av"/>
-                            <constraint firstItem="krp-pm-cLJ" firstAttribute="top" secondItem="Tc6-G0-nud" secondAttribute="bottom" constant="35" id="ZR6-l3-hTw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Tc6-G0-nud" secondAttribute="trailing" constant="42" id="ety-Cd-0Yk"/>
-                            <constraint firstItem="jcl-sy-Yxf" firstAttribute="centerX" secondItem="Tc6-G0-nud" secondAttribute="centerX" id="jG4-aX-t3x"/>
+                            <constraint firstItem="Tc6-G0-nud" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="cuq-bK-Mqr"/>
                             <constraint firstItem="jcl-sy-Yxf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="n5G-yU-x8f"/>
-                            <constraint firstItem="krp-pm-cLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v1r-cE-CWs"/>
+                            <constraint firstItem="krp-pm-cLJ" firstAttribute="top" secondItem="Tc6-G0-nud" secondAttribute="bottom" constant="35" id="naF-8v-eNE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="afr-cN-3Cw"/>
