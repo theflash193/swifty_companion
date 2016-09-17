@@ -31,6 +31,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="68" y="275" width="140" height="21"/>
+                                        </variation>
                                         <variation key="widthClass=regular" misplaced="YES">
                                             <rect key="frame" x="168" y="275" width="140" height="21"/>
                                         </variation>
@@ -59,54 +62,41 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="29X-2t-gAY" firstAttribute="leading" secondItem="8lB-B6-t9e" secondAttribute="leading" constant="68" id="5d8-v9-jjo"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5d8-v9-jjo"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="5d8-v9-jjo"/>
-                                    </mask>
-                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8lB-B6-t9e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5d9-x8-waM"/>
-                            <constraint firstItem="8lB-B6-t9e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="InI-bU-MOF"/>
-                            <constraint firstItem="8lB-B6-t9e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Kpm-D9-Vre"/>
                             <constraint firstItem="pkk-na-10l" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XMf-dD-iI4"/>
                             <constraint firstItem="pkk-na-10l" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="YDZ-FL-Ij5"/>
-                            <constraint firstItem="pkk-na-10l" firstAttribute="centerY" secondItem="8lB-B6-t9e" secondAttribute="centerY" id="crU-YN-nq3"/>
-                            <constraint firstItem="pkk-na-10l" firstAttribute="centerX" secondItem="8lB-B6-t9e" secondAttribute="centerX" id="nHt-Nd-JIc"/>
+                            <constraint firstItem="8lB-B6-t9e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YPj-8o-mhx"/>
+                            <constraint firstItem="8lB-B6-t9e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jby-Te-A5d"/>
+                            <constraint firstItem="pkk-na-10l" firstAttribute="centerX" secondItem="8lB-B6-t9e" secondAttribute="centerX" id="nhL-86-9oA"/>
                             <constraint firstItem="8lB-B6-t9e" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sYE-sK-kms"/>
                             <constraint firstItem="8lB-B6-t9e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="tcj-H4-WPY"/>
+                            <constraint firstItem="pkk-na-10l" firstAttribute="centerY" secondItem="8lB-B6-t9e" secondAttribute="centerY" id="upD-59-pUr"/>
                             <constraint firstItem="8lB-B6-t9e" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zJj-tt-nfQ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="5d9-x8-waM"/>
-                                <exclude reference="InI-bU-MOF"/>
-                                <exclude reference="Kpm-D9-Vre"/>
+                                <exclude reference="YPj-8o-mhx"/>
+                                <exclude reference="jby-Te-A5d"/>
                                 <exclude reference="zJj-tt-nfQ"/>
-                                <exclude reference="crU-YN-nq3"/>
-                                <exclude reference="nHt-Nd-JIc"/>
+                                <exclude reference="nhL-86-9oA"/>
+                                <exclude reference="upD-59-pUr"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="InI-bU-MOF"/>
-                                <include reference="Kpm-D9-Vre"/>
+                                <include reference="YPj-8o-mhx"/>
+                                <include reference="jby-Te-A5d"/>
                                 <exclude reference="sYE-sK-kms"/>
                                 <exclude reference="tcj-H4-WPY"/>
                                 <exclude reference="XMf-dD-iI4"/>
                                 <exclude reference="YDZ-FL-Ij5"/>
-                                <include reference="crU-YN-nq3"/>
-                                <include reference="nHt-Nd-JIc"/>
+                                <include reference="nhL-86-9oA"/>
+                                <include reference="upD-59-pUr"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">

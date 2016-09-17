@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="YAz-LB-oxn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krp-pm-cLJ">
                                 <rect key="frame" x="235" y="310" width="130" height="30"/>
                                 <state key="normal" title="Search Companion"/>
@@ -31,19 +34,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-sy-Yxf">
-                                <rect key="frame" x="0.0" y="64" width="2000" height="536"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="centerX" secondItem="krp-pm-cLJ" secondAttribute="centerX" id="5on-hO-8FR"/>
                             <constraint firstItem="krp-pm-cLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rd-y1-bWb"/>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CKl-bj-o9N"/>
                             <constraint firstItem="Tc6-G0-nud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="FUf-kg-pip"/>
-                            <constraint firstItem="jcl-sy-Yxf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TpD-PF-KK2"/>
                             <constraint firstItem="Tc6-G0-nud" firstAttribute="centerX" secondItem="krp-pm-cLJ" secondAttribute="centerX" id="UxR-yK-gYO"/>
-                            <constraint firstItem="jcl-sy-Yxf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y7l-wF-ZR6"/>
                             <constraint firstItem="Tc6-G0-nud" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="cuq-bK-Mqr"/>
-                            <constraint firstItem="jcl-sy-Yxf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="n5G-yU-x8f"/>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="fXl-L5-rBE"/>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ma4-YJ-A5z"/>
                             <constraint firstItem="krp-pm-cLJ" firstAttribute="top" secondItem="Tc6-G0-nud" secondAttribute="bottom" constant="35" id="naF-8v-eNE"/>
                         </constraints>
                     </view>
@@ -320,28 +321,6 @@
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="rUd-GS-lLU" firstAttribute="top" secondItem="RPc-Bu-yDl" secondAttribute="top" id="1t8-61-1pU"/>
-                                                <constraint firstItem="rUd-GS-lLU" firstAttribute="centerY" secondItem="RPc-Bu-yDl" secondAttribute="centerY" id="QfZ-xg-rVv"/>
-                                                <constraint firstAttribute="trailing" secondItem="rUd-GS-lLU" secondAttribute="trailing" id="m7t-d4-DnF"/>
-                                                <constraint firstItem="rUd-GS-lLU" firstAttribute="leading" secondItem="RPc-Bu-yDl" secondAttribute="leading" id="rv4-sr-Ydu"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="1t8-61-1pU"/>
-                                                    <exclude reference="QfZ-xg-rVv"/>
-                                                    <exclude reference="m7t-d4-DnF"/>
-                                                    <exclude reference="rv4-sr-Ydu"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=compact-widthClass=compact">
-                                                <mask key="constraints">
-                                                    <include reference="1t8-61-1pU"/>
-                                                    <include reference="QfZ-xg-rVv"/>
-                                                    <include reference="m7t-d4-DnF"/>
-                                                    <include reference="rv4-sr-Ydu"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="rUd-GS-lLU" secondAttribute="trailing" id="C2y-f7-UNZ"/>
@@ -349,14 +328,6 @@
                                             <constraint firstItem="rUd-GS-lLU" firstAttribute="top" secondItem="gA7-xM-XHZ" secondAttribute="top" id="V1K-B2-l8h"/>
                                             <constraint firstItem="rUd-GS-lLU" firstAttribute="leading" secondItem="gA7-xM-XHZ" secondAttribute="leading" id="X55-yc-Pcu"/>
                                         </constraints>
-                                        <variation key="heightClass=compact-widthClass=compact">
-                                            <mask key="constraints">
-                                                <exclude reference="C2y-f7-UNZ"/>
-                                                <exclude reference="TMu-5U-bou"/>
-                                                <exclude reference="V1K-B2-l8h"/>
-                                                <exclude reference="X55-yc-Pcu"/>
-                                            </mask>
-                                        </variation>
                                         <connections>
                                             <outlet property="AchievementName" destination="H9L-fQ-qUb" id="ZVC-Bt-aNJ"/>
                                             <outlet property="Description" destination="FmC-jX-hPb" id="QQQ-5S-BLs"/>
