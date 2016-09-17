@@ -151,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="1520" y="1615"/>
         </scene>
-        <!--Item-->
+        <!--Achivement-->
         <scene sceneID="Njo-fI-mdP">
             <objects>
                 <viewController id="Iui-Tq-Qka" customClass="AchievementViewController" customModule="Swift_companion" customModuleProvider="target" sceneMemberID="viewController">
@@ -164,7 +164,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="x5p-cD-aOb"/>
+                    <tabBarItem key="tabBarItem" title="Achivement" image="achivement" selectedImage="achivement filled" id="x5p-cD-aOb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCR-8I-nUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -295,6 +295,8 @@
     <resources>
         <image name="Background" width="2000" height="1300"/>
         <image name="Inconnue" width="200" height="200"/>
+        <image name="achivement" width="50" height="50"/>
+        <image name="achivement filled" width="50" height="50"/>
         <image name="profile" width="50" height="50"/>
         <image name="profile filled" width="50" height="50"/>
         <image name="projet" width="50" height="50"/>
