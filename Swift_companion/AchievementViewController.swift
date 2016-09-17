@@ -38,7 +38,6 @@ class AchievementViewController: UIViewController, UITableViewDataSource {
         let myCell = TableView.dequeueReusableCellWithIdentifier("Achievement", forIndexPath: indexPath) as! AchievementTableViewCell
         
         if student!.achievements != nil {
-            print("Achivement\(student?.achievements)")
             myCell.AchievementName.text = student!.achievements![indexPath.row]["name"].stringValue
             myCell.Description.text = student!.achievements![indexPath.row]["description"].stringValue
         } else {
