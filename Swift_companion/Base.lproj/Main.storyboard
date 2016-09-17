@@ -162,9 +162,34 @@
                     <view key="view" contentMode="scaleToFill" id="NDl-aV-0rr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cFX-sX-gsV">
+                                <rect key="frame" x="0.0" y="3" width="600" height="593"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Achievement" rowHeight="108" id="gA7-xM-XHZ">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gA7-xM-XHZ" id="RPc-Bu-yDl">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cFX-sX-gsV" firstAttribute="top" secondItem="NDl-aV-0rr" secondAttribute="topMargin" constant="7" id="HJf-G2-uRJ"/>
+                            <constraint firstAttribute="trailing" secondItem="cFX-sX-gsV" secondAttribute="trailing" id="QJk-n8-Pd4"/>
+                            <constraint firstAttribute="bottom" secondItem="cFX-sX-gsV" secondAttribute="bottom" id="Zue-ke-ltg"/>
+                            <constraint firstItem="cFX-sX-gsV" firstAttribute="leading" secondItem="NDl-aV-0rr" secondAttribute="leading" id="i1I-HB-af8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Achivement" image="achivement" selectedImage="achivement filled" id="x5p-cD-aOb"/>
+                    <connections>
+                        <outlet property="TableView" destination="cFX-sX-gsV" id="NQQ-2n-qaT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCR-8I-nUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
