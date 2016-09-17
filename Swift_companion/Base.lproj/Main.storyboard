@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="jcl-sy-Yxf">
-                                <rect key="frame" x="0.0" y="64" width="2000" height="536"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="YAz-LB-oxn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krp-pm-cLJ">
                                 <rect key="frame" x="235" y="310" width="130" height="30"/>
@@ -37,13 +37,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="centerX" secondItem="krp-pm-cLJ" secondAttribute="centerX" id="5on-hO-8FR"/>
                             <constraint firstItem="krp-pm-cLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rd-y1-bWb"/>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CKl-bj-o9N"/>
                             <constraint firstItem="Tc6-G0-nud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="FUf-kg-pip"/>
-                            <constraint firstItem="jcl-sy-Yxf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TpD-PF-KK2"/>
                             <constraint firstItem="Tc6-G0-nud" firstAttribute="centerX" secondItem="krp-pm-cLJ" secondAttribute="centerX" id="UxR-yK-gYO"/>
-                            <constraint firstItem="jcl-sy-Yxf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y7l-wF-ZR6"/>
                             <constraint firstItem="Tc6-G0-nud" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="cuq-bK-Mqr"/>
-                            <constraint firstItem="jcl-sy-Yxf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="n5G-yU-x8f"/>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="fXl-L5-rBE"/>
+                            <constraint firstItem="YAz-LB-oxn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ma4-YJ-A5z"/>
                             <constraint firstItem="krp-pm-cLJ" firstAttribute="top" secondItem="Tc6-G0-nud" secondAttribute="bottom" constant="35" id="naF-8v-eNE"/>
                         </constraints>
                     </view>
