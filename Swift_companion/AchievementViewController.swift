@@ -40,8 +40,6 @@ class AchievementViewController: UIViewController, UITableViewDataSource {
         if student!.achievements != nil {
             myCell.AchievementName.text = student!.achievements![indexPath.row]["name"].stringValue
             myCell.Description.text = student!.achievements![indexPath.row]["description"].stringValue
-        } else {
-            print("not found")
         }
         return myCell
     }
