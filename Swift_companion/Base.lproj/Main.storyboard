@@ -167,13 +167,46 @@
                                 <rect key="frame" x="0.0" y="3" width="600" height="593"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Achievement" rowHeight="108" id="gA7-xM-XHZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Achievement" rowHeight="108" id="gA7-xM-XHZ" customClass="AchievementTableViewCell" customModule="Swift_companion" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gA7-xM-XHZ" id="RPc-Bu-yDl">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="107"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="rUd-GS-lLU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="108"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achievement Name" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="H9L-fQ-qUb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="108"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="150" id="5Fb-MW-wbx"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="5" height="5"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FmC-jX-hPb">
+                                                            <rect key="frame" x="150" y="0.0" width="450" height="108"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="rUd-GS-lLU" secondAttribute="trailing" id="C2y-f7-UNZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="rUd-GS-lLU" secondAttribute="bottom" id="TMu-5U-bou"/>
+                                            <constraint firstItem="rUd-GS-lLU" firstAttribute="top" secondItem="gA7-xM-XHZ" secondAttribute="top" id="V1K-B2-l8h"/>
+                                            <constraint firstItem="rUd-GS-lLU" firstAttribute="leading" secondItem="gA7-xM-XHZ" secondAttribute="leading" id="X55-yc-Pcu"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="AchievementName" destination="H9L-fQ-qUb" id="ZVC-Bt-aNJ"/>
+                                            <outlet property="Description" destination="FmC-jX-hPb" id="QQQ-5S-BLs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

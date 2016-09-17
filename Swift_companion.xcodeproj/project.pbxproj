@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00806F8D1D8D873500EDDB59 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00806F8C1D8D873500EDDB59 /* AchievementTableViewCell.swift */; };
 		00F445621D8D4B0D00BCE9AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F445611D8D4B0D00BCE9AA /* AppDelegate.swift */; };
 		00F445641D8D4B0D00BCE9AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F445631D8D4B0D00BCE9AA /* ViewController.swift */; };
 		00F445671D8D4B0D00BCE9AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F445651D8D4B0D00BCE9AA /* Main.storyboard */; };
@@ -211,6 +212,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00806F8C1D8D873500EDDB59 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
 		00F4455E1D8D4B0D00BCE9AA /* Swift_companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_companion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F445611D8D4B0D00BCE9AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F445631D8D4B0D00BCE9AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				00F4456A1D8D4B0D00BCE9AA /* LaunchScreen.storyboard */,
 				00F4456D1D8D4B0D00BCE9AA /* Info.plist */,
 				00F445EA1D8D4DD800BCE9AA /* AchievementViewController.swift */,
+				00806F8C1D8D873500EDDB59 /* AchievementTableViewCell.swift */,
 			);
 			path = Swift_companion;
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				00F445641D8D4B0D00BCE9AA /* ViewController.swift in Sources */,
 				00F445621D8D4B0D00BCE9AA /* AppDelegate.swift in Sources */,
 				00F445E81D8D4D8100BCE9AA /* SkillsViewController.swift in Sources */,
+				00806F8D1D8D873500EDDB59 /* AchievementTableViewCell.swift in Sources */,
 				00F445E71D8D4D8100BCE9AA /* ProjectsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

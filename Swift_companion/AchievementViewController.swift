@@ -35,11 +35,12 @@ class AchievementViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell: UITableViewCell = TableView.dequeueReusableCellWithIdentifier("Achievement", forIndexPath: indexPath)
+        let myCell = TableView.dequeueReusableCellWithIdentifier("Achievement", forIndexPath: indexPath) as! AchievementTableViewCell
         
         if student!.achievements != nil {
-            let detailAchievement: String = student!.competence![indexPath.row]["name"].stringValue + " detail:" + student!.achievements![indexPath.row]["description"].stringValue
-            myCell.textLabel?.text = detailAchievement
+            print("Achivement\(student?.achievements)")
+            myCell.AchievementName.text = student!.achievements![indexPath.row]["name"].stringValue
+            myCell.Description.text = student!.achievements![indexPath.row]["description"].stringValue
         } else {
             print("not found")
         }
