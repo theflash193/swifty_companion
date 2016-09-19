@@ -79,8 +79,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="Tls-Wd-7PO">
-                                <rect key="frame" x="0.0" y="64" width="600" height="1300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="X1K-gb-WG2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="SPp-Kh-0SE">
                                 <rect key="frame" x="200" y="84" width="200" height="447"/>
@@ -217,27 +217,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="X1K-gb-WG2" firstAttribute="leading" secondItem="7OM-mP-uGk" secondAttribute="leading" id="0sw-eT-DhK"/>
                             <constraint firstItem="mfT-X9-p6h" firstAttribute="top" secondItem="SPp-Kh-0SE" secondAttribute="bottom" constant="20" id="9I6-4u-DJ7"/>
-                            <constraint firstItem="Tls-Wd-7PO" firstAttribute="leading" secondItem="7OM-mP-uGk" secondAttribute="leading" id="Bwm-d3-p01"/>
                             <constraint firstItem="SPp-Kh-0SE" firstAttribute="centerX" secondItem="7OM-mP-uGk" secondAttribute="centerX" id="G2k-cI-XL6"/>
-                            <constraint firstItem="Tls-Wd-7PO" firstAttribute="leading" secondItem="7OM-mP-uGk" secondAttribute="leading" id="JoP-ZF-COE"/>
                             <constraint firstItem="SPp-Kh-0SE" firstAttribute="top" secondItem="fal-By-iDe" secondAttribute="bottom" constant="20" id="MKs-jl-Fl3"/>
                             <constraint firstItem="SPp-Kh-0SE" firstAttribute="leading" secondItem="7OM-mP-uGk" secondAttribute="leadingMargin" constant="80" id="SR0-uR-5en"/>
                             <constraint firstItem="SPp-Kh-0SE" firstAttribute="centerY" secondItem="7OM-mP-uGk" secondAttribute="centerY" id="UQ0-oH-PJq"/>
                             <constraint firstItem="SPp-Kh-0SE" firstAttribute="centerY" secondItem="7OM-mP-uGk" secondAttribute="centerY" id="VLZ-6R-cEs"/>
-                            <constraint firstItem="Tls-Wd-7PO" firstAttribute="centerX" secondItem="SPp-Kh-0SE" secondAttribute="centerX" id="e1g-fu-CC7"/>
+                            <constraint firstAttribute="bottom" secondItem="X1K-gb-WG2" secondAttribute="bottom" id="Xay-Mp-WBV"/>
+                            <constraint firstItem="X1K-gb-WG2" firstAttribute="centerX" secondItem="SPp-Kh-0SE" secondAttribute="centerX" id="b8V-Ay-khH"/>
                             <constraint firstItem="SPp-Kh-0SE" firstAttribute="top" secondItem="fal-By-iDe" secondAttribute="bottom" constant="20" id="fOq-R3-w1W"/>
-                            <constraint firstItem="Tls-Wd-7PO" firstAttribute="top" secondItem="fal-By-iDe" secondAttribute="bottom" id="mWa-Tu-SNP"/>
-                            <constraint firstItem="Tls-Wd-7PO" firstAttribute="top" secondItem="fal-By-iDe" secondAttribute="bottom" id="quO-ZP-rYk"/>
-                            <constraint firstAttribute="trailing" secondItem="Tls-Wd-7PO" secondAttribute="trailing" id="umA-fD-Oy9"/>
-                            <constraint firstItem="Tls-Wd-7PO" firstAttribute="centerX" secondItem="SPp-Kh-0SE" secondAttribute="centerX" id="vae-sM-Csq"/>
+                            <constraint firstItem="X1K-gb-WG2" firstAttribute="top" secondItem="7OM-mP-uGk" secondAttribute="top" id="gAb-dU-mGm"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="Bwm-d3-p01"/>
-                                <exclude reference="e1g-fu-CC7"/>
-                                <exclude reference="quO-ZP-rYk"/>
-                                <exclude reference="umA-fD-Oy9"/>
                                 <exclude reference="SR0-uR-5en"/>
                                 <exclude reference="UQ0-oH-PJq"/>
                                 <exclude reference="VLZ-6R-cEs"/>
@@ -246,13 +239,6 @@
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="Bwm-d3-p01"/>
-                                <exclude reference="JoP-ZF-COE"/>
-                                <include reference="e1g-fu-CC7"/>
-                                <exclude reference="mWa-Tu-SNP"/>
-                                <include reference="quO-ZP-rYk"/>
-                                <include reference="umA-fD-Oy9"/>
-                                <exclude reference="vae-sM-Csq"/>
                                 <exclude reference="G2k-cI-XL6"/>
                                 <exclude reference="MKs-jl-Fl3"/>
                                 <include reference="SR0-uR-5en"/>
