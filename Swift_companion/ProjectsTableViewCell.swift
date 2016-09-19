@@ -9,6 +9,9 @@
 import UIKit
 
 class ProjectsTableViewCell: UITableViewCell {
+    @IBOutlet weak var Projet: UILabel!
+    @IBOutlet weak var Note: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -37,29 +37,24 @@ class ProjectsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let myCell: UITableViewCell = ProjectTableView.dequeueReusableCellWithIdentifier("Project", forIndexPath: indexPath)
+        let myCell: ProjectsTableViewCell? = ProjectTableView.dequeueReusableCellWithIdentifier("Project", forIndexPath: indexPath) as? ProjectsTableViewCell
         
         
         if student!.projets != nil {
-            var text: String
             let name: String? = student?.projets?[indexPath.row]["project"]["name"].stringValue
             let projet_validated = student?.projets?[indexPath.row]["project"]["validated"] == true
             switch (name, projet_validated) {
-            case (nil, _):
-                text = ""
-           
             case (_, projet_validated == true):
                 let note_value: String? = student?.projets?[indexPath.row]["final_mark"].stringValue
-                text = name! + " " + (note_value)!
+                myCell?.Projet.text = name
+                myCell?.Note.text = note_value
             case (_, projet_validated == false):
-                let note_value = "fail"
-                text = name! + " " + note_value
-            default:
-                text = name!
+                myCell?.Projet.text = name
+                myCell?.Note.text = "fail"
+            default: break
             }
-            myCell.textLabel?.text = text
         }
-        return myCell
+        return myCell!
     }
     /*
     // MARK: - Navigation
