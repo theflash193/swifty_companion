@@ -17,7 +17,6 @@ class ProjectsViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         ProjectTableView.dataSource = self
-        print(student?.projets)
         // Do any additional setup after loading the view.
     }
 
@@ -40,9 +39,25 @@ class ProjectsViewController: UIViewController, UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let myCell: UITableViewCell = ProjectTableView.dequeueReusableCellWithIdentifier("Project", forIndexPath: indexPath)
         
+        
         if student!.projets != nil {
+            var text: String
             let name: String? = student?.projets?[indexPath.row]["project"]["name"].stringValue
-            myCell.textLabel?.text = name
+            let projet_validated = student?.projets?[indexPath.row]["project"]["validated"] == true
+            switch (name, projet_validated) {
+            case (nil, _):
+                text = ""
+           
+            case (_, projet_validated == true):
+                let note_value: String? = student?.projets?[indexPath.row]["final_mark"].stringValue
+                text = name! + " " + (note_value)!
+            case (_, projet_validated == false):
+                let note_value = "fail"
+                text = name! + " " + note_value
+            default:
+                text = name!
+            }
+            myCell.textLabel?.text = text
         }
         return myCell
     }
