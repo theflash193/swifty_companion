@@ -18,7 +18,6 @@ class AchievementViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.dataSource = self
-        print(student?.achievements)
     }
     
     override func didReceiveMemoryWarning() {
