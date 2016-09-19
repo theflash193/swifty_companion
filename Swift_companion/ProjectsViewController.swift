@@ -17,9 +17,7 @@ class ProjectsViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         ProjectTableView.dataSource = self
-//        
-//        print(student?.projets)
-//        print("project name : \(student?.projets?[0]["project"]["name"].stringValue)")
+        print(student?.projets)
         // Do any additional setup after loading the view.
     }
 

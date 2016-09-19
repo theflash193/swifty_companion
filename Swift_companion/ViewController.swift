@@ -53,6 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 case .Success:
                     let data = JSON(data: response.data!)
                     self.student = Student(data: data)
+                    self.searchButton.enabled = true
                 case .Failure:
                     print("error")
                 }
