@@ -1,0 +1,6 @@
+{
+  "name": "Swifty companion",
+  "tagline": "Une application réaliser en Swift qui permet de récupérer les informations des élèves de 42, en utilisant l’API de l'intranet de 42",
+  "body": "# swifty_companion\r\nUne application réaliser en Swift qui permet de récupérer les informations des élèves de 42, en utilisant l’API de l'intranet de 42\r\n\r\n![swifty companion](https://i.ytimg.com/vi/OA1PeQxvANc/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=fcKhuzIJiY-HGH0zMPdAg0aw1Ck \"swifty companion\")\r\n\r\n[Clic to watch Démo](https://www.youtube.com/watch?v=OA1PeQxvANc \"swifty companion\")\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
